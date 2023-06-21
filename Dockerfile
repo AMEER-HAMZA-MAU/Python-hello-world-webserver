@@ -1,7 +1,7 @@
 FROM ubuntu:latest
-RUN apt update
-RUN apt install pyhton3 -y 
+RUN sudo apt update
+RUN sudo apt install python3 -y 
 WORKDIR app
 COPY . . 
 EXPOSE 8000
-CMD [ "pyhton3", "./print.py" ]
+CMD [ "python3", "./print.py" ]
