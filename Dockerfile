@@ -1,6 +1,6 @@
 FROM ubuntu:latest
-RUN sudo apt update
-RUN sudo apt install python3 -y 
+RUN apt update
+RUN apt install python3 -y 
 WORKDIR app
 COPY . . 
 EXPOSE 8000
